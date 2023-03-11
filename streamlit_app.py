@@ -15,7 +15,9 @@ from components.Make_Prediction import predict
 # In[ ]:
 
 path=os.path.abspath("flight_model.pkl")
+print("Model Path : ",path)
 file=open(path,"rb")
+print("file",file)
 model=pickle.load(file)
 
 
