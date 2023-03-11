@@ -8,13 +8,14 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import pickle
+import os
 from components.Make_Prediction import predict
 
 
 # In[ ]:
 
-
-file=open("flight_model.pkl","rb")
+path=os.path.abspath("flight_model.pkl")
+file=open(path,"rb")
 model=pickle.load(file)
 
 
